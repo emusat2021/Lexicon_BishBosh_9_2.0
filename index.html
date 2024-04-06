@@ -25,14 +25,38 @@
     <div class="container-fluid content">
         <div class="card text-center">
             <div class="card-header">
-                info
+                <!-- info about how Bish is working -->
+                <p>
+                    Bish-Bosh lists all numbers between 1 and 100, but some exceptions:<br>
+                    If the number is evenly divisible with 3, 'Bish' is listed instead of the number.<br>
+                    If the number is evenly divisible by 4, ' Bosh ' is listed instead the number.<br>
+                    If the number is evenly divisible by both 3 and 4, "Bish-Bosh" is written insteadtreial treilea of the number.
+                </p>
+                <!-- info about how user shall fill in the input -->
+                <p>
+                    1. Choose bish as a first number - If the number is evenly divisible with your first choosen number, 'Bish' is listed instead of your first choosen number.<br>
+                    2. Choose bosh as a second number - If the number is evenly divisible with your second choosen number, 'Bosh' is listed instead of your second choosen number.<br>
+                    3. Choose maxim number as a third number - If the number is evenly divisible with your second choosen number, 'Bosh' is listed instead of your second choosen number.
+
+
+                </p>
+                <!-- input form -->
+                <form id="bishForm" style="margin-bottom:100px">
+                    <input type="number" id="bish" placeholder="Choose bish" min="1"><br>
+                    <input type="number" id="bosh" placeholder="Choose bosh" min="1"><br>
+                    <input type="number" id="bishbosh" placeholder="Choose max-nr" min="1"><br>
+
+                    <button type="submit" id="formBtn">Submit</button>
+                </form>
+
+                <div id="output"></div>
             </div>
         </div>
     </div>
     <!-- /CONTENT -->
     <!-- FOOTER -->
     <footer>
-        <div class="container-fluid footer">
+        <div class="container-fluid footer" style="margin-top: 50px">
             <div class="disclaimer text-center">
                 <small>For educational purposes only | 	&#169; 2024 by
                 <a href="https://github.com/emusat2021" target="_blank">Eugenia Musat</a>
@@ -42,5 +66,6 @@
     </footer>
     <!-- /FOOTER -->
     <script src="bishbosh.js"></script>
+
 </body>
 </html>
